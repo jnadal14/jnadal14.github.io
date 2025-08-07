@@ -1,0 +1,109 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jacob Nadal • Data Science and NLP</title>
+  <meta name="description" content="Portfolio of Jacob Nadal, data scientist specialising in NLP, pipelines, and analytics." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.ico" />
+  <meta property="og:title" content="Jacob Nadal • Data Science and NLP">
+  <meta property="og:description" content="Pipelines, NLP, dashboards, and ML systems.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jnadal14.github.io/">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Jacob Nadal",
+    "jobTitle":"Data Scientist",
+    "email":"mailto:jacob24@rogers.com",
+    "url":"https://jnadal14.github.io",
+    "sameAs":[
+      "https://www.linkedin.com/in/jacob-nadal-3b0a59196/",
+      "https://github.com/jnadal14"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="container">
+    <nav class="nav">
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <a href="Resume.pdf" target="_blank" rel="noopener">Resume</a>
+    </nav>
+    <section class="hero">
+      <h1>Jacob Nadal</h1>
+      <p class="tagline">Data science and NLP • pipelines, dashboards, and ML systems</p>
+      <div class="quicklinks">
+        <a class="btn" href="https://www.linkedin.com/in/jacob-nadal-3b0a59196/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/jnadal14" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn outline" href="#contact">Hire me</a>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="projects" class="container">
+      <h2>Projects</h2>
+      <div class="grid" id="projects-grid">
+        <!-- Filled by script.js from projects.json -->
+      </div>
+    </section>
+
+    <section id="experience" class="container">
+      <h2>Experience</h2>
+      <article class="card">
+        <h3>Government of British Columbia • NLP Engineer, Internship</h3>
+        <p>Modular pipeline for scanned environmental PDFs with site ID extraction, metadata parsing, type classification, and duplicate detection using ROUGE and heuristics. Quantised LLMs for fallbacks, strong alignment with registry rules.</p>
+      </article>
+      <article class="card">
+        <h3>The Byng Group • Data Analyst</h3>
+        <p>Quote conversion dashboard for sales insight, trade pool model for resource allocation, and order flow tracking in Power BI with SQL pipelines.</p>
+      </article>
+      <article class="card">
+        <h3>Peerage Capital • Data Analyst Intern</h3>
+        <p>Portfolio analytics and market research with automated reporting.</p>
+      </article>
+    </section>
+
+    <section id="skills" class="container">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>Python</li><li>SQL</li><li>Power BI</li><li>PyTorch</li><li>Hugging Face</li><li>scikit-learn</li><li>SpaCy</li><li>NLTK</li><li>Git</li><li>Docker</li><li>Jupyter</li>
+      </ul>
+    </section>
+
+    <section class="container cta">
+      <h2>Available for full time roles in Vancouver</h2>
+      <p>Open to data science, ML, and NLP roles. I build reliable pipelines and ship features that move metrics.</p>
+      <a class="btn" href="Resume.pdf" target="_blank" rel="noopener">Download resume</a>
+    </section>
+
+    <section id="contact" class="container">
+      <h2>Contact</h2>
+      <form class="card form" action="https://formspree.io/f/your_form_id" method="POST">
+        <label>Name<input type="text" name="name" required></label>
+        <label>Email<input type="email" name="email" required></label>
+        <label>Message<textarea name="message" rows="5" required></textarea></label>
+        <input type="hidden" name="_subject" value="Portfolio contact">
+        <button class="btn" type="submit">Send</button>
+      </form>
+      <p class="email-note">Prefer email? jacob24<span aria-hidden="true"> at </span>rogers<span aria-hidden="true"> dot </span>com</p>
+    </section>
+  </main>
+
+  <footer class="container">
+    <p>© <span id="year"></span> Jacob Nadal</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

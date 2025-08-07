@@ -1,0 +1,31 @@
+// projects.json
+[
+    {
+      "title": "BC Environment NLP Pipeline",
+      "desc": "End to end system for scanned site files. Site ID extraction, metadata parsing, document type classification, duplicate detection, and file renaming. LLM fallbacks with quantisation for local inference.",
+      "links": [
+        {"label": "Repo", "href": "https://github.com/bcgov/nr-site-tagging-pilot"}
+      ]
+    },
+    {
+      "title": "Lay Summarisation Pipeline",
+      "desc": "Biomedical lay summary generation with retrieval and evaluation. Trained and compared approaches and integrated an evaluation harness.",
+      "links": [
+        {"label": "Repo", "href": "https://github.com/jnadal14/Lay_Summarization_LLM_Pipeline"}
+      ]
+    },
+    {
+      "title": "Detoxification LLM Dataflow",
+      "desc": "Toxicity reduction with quality filters, training data curation, and evaluation.",
+      "links": [
+        {"label": "Repo", "href": "https://github.com/jnadal14/Detoxification_LLM_Dataflow"}
+      ]
+    },
+    {
+      "title": "Movie Review Corpus and UI",
+      "desc": "Corpus collection, annotation schema, and a simple front end for review exploration.",
+      "links": [
+        {"label": "Repo", "href": "https://github.com/jnadal14/Movie_Review_Corpus_Annotation"}
+      ]
+    }
+  ]
