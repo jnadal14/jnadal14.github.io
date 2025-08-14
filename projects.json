@@ -1,5 +1,22 @@
 [
   {
+    "title": "BC Environment NLP Pipeline",
+    "desc": "Developed a comprehensive NLP pipeline for processing scanned environmental PDFs at the Government of British Columbia. Implemented advanced document classification using regex patterns and BERT models, built duplicate detection with ROUGE and RapidFuzz algorithms, and integrated local LLM fallbacks with Ollama for robust processing capabilities. The system processes thousands of documents with 95%+ accuracy.",
+    "links": [
+      {
+        "label": "Repository",
+        "href": "https://github.com/bcgov/nr-site-tagging-pilot"
+      },
+      {
+        "label": "Documentation",
+        "href": "https://github.com/bcgov/nr-site-tagging-pilot/blob/main/README.md"
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop",
+    "category": "NLP",
+    "impact": "Processed 10,000+ documents with 95% accuracy"
+  },
+  {
     "title": "Lay Summarisation Pipeline",
     "desc": "Built an advanced biomedical text summarization system using retrieval-assisted prompting techniques. Implemented comprehensive output formatting validation and developed a robust evaluation harness for macro metrics and style assessment. The pipeline generates human-readable summaries from complex scientific papers, making research accessible to broader audiences.",
     "links": [
@@ -51,23 +68,6 @@
     "impact": "Annotated 50,000+ reviews with 92% agreement"
   },
   {
-    "title": "BC Environment NLP Pipeline",
-    "desc": "Developed a comprehensive NLP pipeline for processing scanned environmental PDFs at the Government of British Columbia. Implemented advanced document classification using regex patterns and BERT models, built duplicate detection with ROUGE and RapidFuzz algorithms, and integrated local LLM fallbacks with Ollama for robust processing capabilities. The system processes thousands of documents with 95%+ accuracy.",
-    "links": [
-      {
-        "label": "Repository",
-        "href": "https://github.com/bcgov/nr-site-tagging-pilot"
-      },
-      {
-        "label": "Documentation",
-        "href": "https://github.com/bcgov/nr-site-tagging-pilot/blob/main/README.md"
-      }
-    ],
-    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop",
-    "category": "NLP",
-    "impact": "Processed 10,000+ documents with 95% accuracy"
-  },
-  {
     "title": "Real-time Analytics Dashboard",
     "desc": "Built a real-time analytics dashboard using Power BI and SQL pipelines for tracking order flow and business metrics. Implemented automated data processing workflows and created interactive visualizations that provide actionable insights for business decision-making. The dashboard serves 100+ daily users.",
     "links": [
@@ -83,22 +83,5 @@
     "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop",
     "category": "Analytics",
     "impact": "Improved decision speed by 60%"
-  },
-  {
-    "title": "Portfolio Optimization Engine",
-    "desc": "Developed an automated portfolio analytics and research system with intelligent reporting capabilities. Created algorithms for risk assessment, performance tracking, and investment recommendation generation. The engine processes millions of data points to provide data-driven insights for portfolio management.",
-    "links": [
-      {
-        "label": "Documentation",
-        "href": "#"
-      },
-      {
-        "label": "API",
-        "href": "#"
-      }
-    ],
-    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop",
-    "category": "Finance",
-    "impact": "Optimized portfolios with 15% better returns"
   }
 ]
