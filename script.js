@@ -614,16 +614,38 @@ function preloadResources() {
   });
 }
 
-// Service Worker registration (if available)
+// Service Worker registration with aggressive update
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('/sw.js')
       .then(registration => {
-        console.log('SW registered: ', registration);
+        // Attempt immediate update
+        registration.update();
+
+        // If there's an updated worker waiting, activate it
+        if (registration.waiting) {
+          registration.waiting.postMessage({ type: 'SKIP_WAITING' });
+        }
+
+        // When a new worker is found, ask it to skip waiting once installed
+        registration.addEventListener('updatefound', () => {
+          const newWorker = registration.installing;
+          if (!newWorker) return;
+          newWorker.addEventListener('statechange', () => {
+            if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+              newWorker.postMessage({ type: 'SKIP_WAITING' });
+            }
+          });
+        });
       })
-      .catch(registrationError => {
-        console.log('SW registration failed: ', registrationError);
+      .catch(error => {
+        console.log('SW registration failed: ', error);
       });
+
+    // Reload the page when the active service worker changes
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+      window.location.reload();
+    });
   });
 }
 
