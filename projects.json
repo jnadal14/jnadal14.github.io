@@ -23,10 +23,6 @@
       {
         "label": "Repository",
         "href": "https://github.com/jnadal14/Lay_Summarization_LLM_Pipeline"
-      },
-      {
-        "label": "Demo",
-        "href": "https://github.com/jnadal14/Lay_Summarization_LLM_Pipeline#demo"
       }
     ],
     "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop",
@@ -43,7 +39,7 @@
       },
       {
         "label": "Paper",
-        "href": "https://github.com/jnadal14/Detoxification_LLM_Dataflow/blob/main/paper.pdf"
+        "href": "https://github.com/jnadal14/Detoxification_LLM_Dataflow/blob/main/Final_Report.pdf"
       }
     ],
     "image": "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=300&fit=crop",
@@ -57,10 +53,6 @@
       {
         "label": "Repository",
         "href": "https://github.com/jnadal14/Movie_Review_Corpus_Annotation"
-      },
-      {
-        "label": "Live Demo",
-        "href": "https://jnadal14.github.io/movie-review-explorer"
       }
     ],
     "image": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=400&h=300&fit=crop",
