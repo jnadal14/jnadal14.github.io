@@ -617,7 +617,7 @@ function preloadResources() {
 // Service Worker registration with aggressive update
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js?v=1.0.3')
+    navigator.serviceWorker.register('/sw.js?v=1.0.4')
       .then(registration => {
         // Attempt immediate update
         registration.update();
