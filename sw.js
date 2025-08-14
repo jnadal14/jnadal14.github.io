@@ -1,4 +1,4 @@
-const CACHE_NAME = 'jacob-nadal-portfolio-v1.0.2';
+const CACHE_NAME = 'jacob-nadal-portfolio-v1.0.3';
 const urlsToCache = [
   '/',
   '/index.html',
@@ -78,6 +78,9 @@ self.addEventListener('activate', event => {
           }
         })
       );
+    }).then(() => {
+      // Force clients to reload
+      return self.clients.claim();
     })
   );
 });
