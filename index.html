@@ -1,28 +1,32 @@
-<!-- index.html -->
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Jacob Nadal • Data Science and NLP</title>
-  <meta name="description" content="Portfolio of Jacob Nadal, data scientist specialising in NLP, pipelines, and analytics." />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Jacob Nadal • Data Science & NLP Engineer</title>
+  <meta name="description" content="Jacob Nadal - Data Science and NLP Engineer specializing in ML pipelines, dashboards, and AI systems. Building the future of intelligent data processing.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="favicon.ico" />
-  <meta property="og:title" content="Jacob Nadal • Data Science and NLP">
-  <meta property="og:description" content="Pipelines, NLP, dashboards, and ML systems.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#6366f1">
+  <meta property="og:title" content="Jacob Nadal • Data Science & NLP Engineer">
+  <meta property="og:description" content="Building intelligent data pipelines and ML systems that transform how we process information.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://jnadal14.github.io/">
+  <meta property="og:url" content="https://jnadal14.github.io">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=1200&h=630&fit=crop">
+  <meta name="twitter:card" content="summary_large_image">
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"Person",
     "name":"Jacob Nadal",
-    "jobTitle":"Data Scientist",
+    "jobTitle":"Data Science & NLP Engineer",
     "email":"mailto:jacob24@rogers.com",
     "url":"https://jnadal14.github.io",
+    "description":"Data Science and NLP Engineer specializing in ML pipelines, dashboards, and AI systems",
     "sameAs":[
       "https://www.linkedin.com/in/jacob-nadal-3b0a59196/",
       "https://github.com/jnadal14"
@@ -31,78 +35,438 @@
   </script>
 </head>
 <body>
-  <header class="container">
-    <nav class="nav">
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-      <a href="Resume.pdf" target="_blank" rel="noopener">Resume</a>
-    </nav>
-    <section class="hero">
-      <h1>Jacob Nadal</h1>
-      <p class="tagline">Data science and NLP • pipelines, dashboards, and ML systems</p>
-      <div class="quicklinks">
-        <a class="btn" href="https://www.linkedin.com/in/jacob-nadal-3b0a59196/" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn" href="https://github.com/jnadal14" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn outline" href="#contact">Hire me</a>
+  <!-- Loading Screen -->
+  <div id="loading-screen" class="loading-screen">
+    <div class="loading-content">
+      <div class="loading-spinner"></div>
+      <p>Loading amazing things...</p>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-text">JN</span>
       </div>
-    </section>
-  </header>
-
-  <main>
-    <section id="projects" class="container">
-      <h2>Projects</h2>
-      <div class="grid" id="projects-grid">
-        <!-- Filled by script.js from projects.json -->
+      <div class="nav-links">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#summary" class="nav-link">Professional Summary</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="JACOB_NADAL_RESUME_2025.pdf" target="_blank" rel="noopener" class="nav-link resume-link" download>Resume</a>
       </div>
-    </section>
+      <div class="nav-toggle" id="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
 
-    <section id="experience" class="container">
-      <h2>Experience</h2>
-      <article class="card">
-        <h3>Government of British Columbia • NLP Engineer, Internship</h3>
-        <p>Modular pipeline for scanned environmental PDFs with site ID extraction, metadata parsing, type classification, and duplicate detection using ROUGE and heuristics. Quantised LLMs for fallbacks, strong alignment with registry rules.</p>
-      </article>
-      <article class="card">
-        <h3>The Byng Group • Data Analyst</h3>
-        <p>Quote conversion dashboard for sales insight, trade pool model for resource allocation, and order flow tracking in Power BI with SQL pipelines.</p>
-      </article>
-      <article class="card">
-        <h3>Peerage Capital • Data Analyst Intern</h3>
-        <p>Portfolio analytics and market research with automated reporting.</p>
-      </article>
-    </section>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-background">
+      <div class="hero-particles" id="particles"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">
+          <span class="title-line">Jacob Nadal</span>
+          <span class="title-subtitle">Data Science & NLP Engineer</span>
+        </h1>
+        <p class="hero-description">
+          Transforming data into intelligence. Building robust ML pipelines, 
+          intelligent dashboards, and AI systems that scale.
+        </p>
+        <!-- Stats removed per request -->
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <span>View Projects</span>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn-outline">Let's Connect</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="code-window">
+          <div class="code-header">
+            <div class="code-dots">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <span class="code-title">pipeline.py</span>
+          </div>
+          <div class="code-content">
+            <pre><code class="typing-code" id="typing-code"></code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
 
-    <section id="skills" class="container">
-      <h2>Skills</h2>
-      <ul class="skills">
-        <li>Python</li><li>SQL</li><li>Power BI</li><li>PyTorch</li><li>Hugging Face</li><li>scikit-learn</li><li>SpaCy</li><li>NLTK</li><li>Git</li><li>Docker</li><li>Jupyter</li>
-      </ul>
-    </section>
+  <!-- Professional Summary Section -->
+  <section id="summary" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Professional Summary</h2>
+        <p class="section-subtitle">A concise overview of my background and what I bring to a data science & NLP team</p>
+      </div>
+      <div class="summary-content" style="max-width: 800px; margin: 0 auto;">
+        <p class="mb-3">
+          I am a data scientist and computational linguist with a strong foundation in mathematics and engineering, passionate about building intelligent systems that deliver measurable impact. My work spans end-to-end data workflows, from designing and deploying machine learning pipelines to creating intuitive analytics dashboards for decision-makers. I have engineered solutions that cut government document review time from hours to minutes, optimized workforce allocation for regional service providers, and developed natural language processing applications ranging from biomedical summarization to sentiment analysis.
+        </p>
+        <p class="mb-3">
+          Proficient in Python, SQL, R, and modern ML/NLP frameworks, I combine technical expertise with a collaborative, problem-solving mindset. My experience includes prototyping a data pipeline for the BC Ministry of Environment, business intelligence models for The Byng Group, and LLM-driven applications leveraging Hugging Face, Ollama, and retrieval-augmented generation. I thrive in environments that value innovation, adaptability, and real-world impact, and I approach every project with a balance of analytical rigour and user-focused design.
+        </p>
+      </div>
+    </div>
+  </section>
 
-    <section class="container cta">
-      <h2>Available for full time roles in Vancouver</h2>
-      <p>Open to data science, ML, and NLP roles. I build reliable pipelines and ship features that move metrics.</p>
-      <a class="btn" href="Resume.pdf" target="_blank" rel="noopener">Download resume</a>
-    </section>
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Data Science Projects</h2>
+        <p class="section-subtitle">Innovative solutions that demonstrate technical expertise and problem-solving skills</p>
+      </div>
+      <div class="projects-grid" id="projects-grid">
+        <!-- Projects will be loaded here -->
+      </div>
+      <div class="projects-cta">
+        <a href="https://github.com/jnadal14" target="_blank" rel="noopener" class="btn btn-outline">
+          View All Projects on GitHub
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact" class="container">
-      <h2>Contact</h2>
-      <form class="card form" action="https://formspree.io/f/your_form_id" method="POST">
-        <label>Name<input type="text" name="name" required></label>
-        <label>Email<input type="email" name="email" required></label>
-        <label>Message<textarea name="message" rows="5" required></textarea></label>
-        <input type="hidden" name="_subject" value="Portfolio contact">
-        <button class="btn" type="submit">Send</button>
-      </form>
-      <p class="email-note">Prefer email? jacob24<span aria-hidden="true"> at </span>rogers<span aria-hidden="true"> dot </span>com</p>
-    </section>
-  </main>
+  <!-- Experience Section -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Professional Experience</h2>
+        <p class="section-subtitle">Building expertise through diverse roles in data science and engineering</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>NLP Engineer Intern</h3>
+              <span class="timeline-company">Government of British Columbia</span>
+              <span class="timeline-date">2024</span>
+            </div>
+            <p class="timeline-description">
+              Developed comprehensive pipeline for processing scanned environmental PDFs with advanced NLP techniques. 
+              Implemented site ID extraction, metadata parsing, and document classification using regex patterns and BERT models. 
+              Built duplicate detection system using ROUGE and RapidFuzz algorithms with deterministic file renaming. 
+              Integrated local LLM fallbacks with Ollama for robust processing capabilities.
+            </p>
+            <div class="timeline-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">BERT</span>
+              <span class="tech-tag">NLP</span>
+              <span class="tech-tag">Ollama</span>
+              <span class="tech-tag">ROUGE</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Data Analyst</h3>
+              <span class="timeline-company">The Byng Group</span>
+              <span class="timeline-date">2023</span>
+            </div>
+            <p class="timeline-description">
+              Analyzed quote conversion patterns and developed trade pool models for optimal resource allocation. 
+              Created comprehensive order flow tracking system in Power BI with SQL data pipelines. 
+              Delivered actionable insights that improved operational efficiency and decision-making processes.
+            </p>
+            <div class="timeline-tech">
+              <span class="tech-tag">SQL</span>
+              <span class="tech-tag">Power BI</span>
+              <span class="tech-tag">Data Analysis</span>
+              <span class="tech-tag">Business Intelligence</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Data Analyst Intern</h3>
+              <span class="timeline-company">Peerage Capital</span>
+              <span class="timeline-date">2022</span>
+            </div>
+            <p class="timeline-description">
+              Conducted portfolio analytics and research with automated reporting systems. 
+              Developed data-driven insights for investment decision support and portfolio optimization strategies.
+            </p>
+            <div class="timeline-tech">
+              <span class="tech-tag">Portfolio Analytics</span>
+              <span class="tech-tag">Automated Reporting</span>
+              <span class="tech-tag">Financial Analysis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <footer class="container">
-    <p>© <span id="year"></span> Jacob Nadal</p>
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-subtitle">Comprehensive toolkit for building intelligent data solutions</p>
+      </div>
+      <div class="skills-container">
+        <div class="skills-category">
+          <h3>Programming & ML</h3>
+          <div class="skills-grid">
+            <div class="skill-item" data-skill="Python">
+              <div class="skill-icon">🐍</div>
+              <span class="skill-name">Python</span>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="95"></div>
+              </div>
+            </div>
+            <div class="skill-item" data-skill="PyTorch">
+              <div class="skill-icon">🔥</div>
+              <span class="skill-name">PyTorch</span>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="90"></div>
+              </div>
+            </div>
+            <div class="skill-item" data-skill="scikit-learn">
+              <div class="skill-icon">📊</div>
+              <span class="skill-name">scikit-learn</span>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="88"></div>
+              </div>
+            </div>
+            <div class="skill-item" data-skill="Hugging Face">
+              <div class="skill-icon">🤗</div>
+              <span class="skill-name">Hugging Face</span>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="92"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="skills-category">
+          <h3>NLP & Text Processing</h3>
+          <div class="skills-grid">
+            <div class="skill-item" data-skill="spaCy">
+              <div class="skill-icon">📝</div>
+              <span class="skill-name">spaCy</span>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="85"></div>
+              </div>
+            </div>
+            <div class="skill-item" data-skill="NLTK">
+              <div class="skill-icon">📚</div>
+              <span class="skill-name">NLTK</span>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="80"></div>
+              </div>
+            </div>
+            <div class="skill-item" data-skill="Transformers">
+              <div class="skill-icon">⚡</div>
+              <span class="skill-name">Transformers</span>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="90"></div>
+              </div>
+            </div>
+            <div class="skill-item" data-skill="BERT">
+              <div class="skill-icon">🧠</div>
+              <span class="skill-name">BERT</span>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="88"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="skills-category">
+          <h3>Data & Infrastructure</h3>
+          <div class="skills-grid">
+            <div class="skill-item" data-skill="SQL">
+              <div class="skill-icon">🗄️</div>
+              <span class="skill-name">SQL</span>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="92"></div>
+              </div>
+            </div>
+            <div class="skill-item" data-skill="Power BI">
+              <div class="skill-icon">📈</div>
+              <span class="skill-name">Power BI</span>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="85"></div>
+              </div>
+            </div>
+            <div class="skill-item" data-skill="Docker">
+              <div class="skill-icon">🐳</div>
+              <span class="skill-name">Docker</span>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="78"></div>
+              </div>
+            </div>
+            <div class="skill-item" data-skill="Git">
+              <div class="skill-icon">📦</div>
+              <span class="skill-name">Git</span>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="90"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section section-cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to Build Something Amazing?</h2>
+        <p>I'm available for full-time roles in Vancouver and remote opportunities. Let's create intelligent solutions that drive real impact.</p>
+        <div class="cta-actions">
+          <a href="#contact" class="btn btn-primary btn-large">Start a Conversation</a>
+          <a href="JACOB_NADAL_RESUME_2025.pdf" target="_blank" rel="noopener" class="btn btn-outline btn-large" download>
+            Download Resume
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">Ready to discuss your next project or opportunity? I'd love to hear from you.</p>
+      </div>
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <div class="contact-details">
+              <h3>Email</h3>
+              <p><a href="mailto:jacob24@rogers.com">jacob24@rogers.com</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div class="contact-details">
+              <h3>Location</h3>
+              <p>Vancouver, BC, Canada</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">💼</div>
+            <div class="contact-details">
+              <h3>LinkedIn</h3>
+              <a href="https://www.linkedin.com/in/jacob-nadal-3b0a59196/" target="_blank" rel="noopener">Connect with me</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🐙</div>
+            <div class="contact-details">
+              <h3>GitHub</h3>
+              <a href="https://github.com/jnadal14" target="_blank" rel="noopener">View my work</a>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" action="https://formspree.io/f/mwpqznkw" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+          <input type="hidden" name="_subject" value="Portfolio Contact - Jacob Nadal">
+          <button type="submit" class="btn btn-primary btn-large">
+            <span>Send Message</span>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="footer-logo">JN</span>
+          <p>Building intelligent data solutions</p>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-social">
+          <a href="https://github.com/jnadal14" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/jacob-nadal-3b0a59196/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Jacob Nadal. All rights reserved.</p>
+      </div>
+    </div>
   </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
 
   <script src="script.js" defer></script>
 </body>
