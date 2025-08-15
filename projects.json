@@ -1,7 +1,7 @@
 [
   {
     "title": "BC Environment NLP Pipeline",
-    "desc": "Developed a comprehensive NLP pipeline for processing scanned environmental PDFs at the Government of British Columbia. Implemented advanced document classification using regex patterns and BERT models, built duplicate detection with ROUGE and RapidFuzz algorithms, and integrated local LLM fallbacks with Ollama for robust processing capabilities. The system processes thousands of documents with 95%+ accuracy.",
+    "desc": "Developed a comprehensive NLP pipeline for processing scanned environmental PDFs at the Government of British Columbia. Implemented document classification using regex patterns and BERT models, built duplicate detection with ROUGE and RapidFuzz algorithms, and integrated local LLM fallbacks with Ollama for robust processing capabilities. The system demonstrates strong performance in text metadata extraction, reliably detects potential duplicates, and makes conservative but highly accurate positive releasability predictions.",
     "links": [
       {
         "label": "Repository",
@@ -14,11 +14,11 @@
     ],
     "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop",
     "category": "NLP",
-    "impact": "Processed 10,000+ documents with 95% accuracy"
+    "impact": "Delivers strong metadata extraction, comprehensive duplicate detection, and cautious but highly accurate positive releasability predictions"
   },
   {
-    "title": "Lay Summarisation Pipeline",
-    "desc": "Built an advanced biomedical text summarization system using retrieval-assisted prompting techniques. Implemented comprehensive output formatting validation and developed a robust evaluation harness for macro metrics and style assessment. The pipeline generates human-readable summaries from complex scientific papers, making research accessible to broader audiences.",
+    "title": "Lay Summarization Pipeline",
+    "desc": "Built a modular biomedical lay-summarization system comparing zero-shot, few-shot, fine-tuned, and retrieval-augmented approaches. On limited hardware, abstract-only LLaMA2 provided the best overall balance of relevance and readability, while RAG improved factual grounding. The pipeline includes an evaluation harness for ROUGE, BLEU, BERTScore, FKGL, CLI, DCRS, and SummaC.",
     "links": [
       {
         "label": "Repository",
@@ -27,8 +27,9 @@
     ],
     "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop",
     "category": "NLP",
-    "impact": "Improved readability scores by 40%"
+    "impact": "Abstract-only LLaMA2 outperformed fine-tuned variants on limited hardware, and the RAG variant achieved the strongest factuality by SummaC"
   },
+  
   {
     "title": "Detoxification LLM Dataflow",
     "desc": "Engineered a sophisticated data curation and toxicity reduction workflow for large language models. Designed filtering mechanisms for translation sentiment analysis and implemented detoxification stages with reproducible runs. The system ensures AI-generated content meets safety standards while maintaining quality and coherence.",
@@ -44,7 +45,7 @@
     ],
     "image": "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=300&fit=crop",
     "category": "ML",
-    "impact": "Reduced toxic content by 85%"
+    "impact": "Reduced toxic content.%"
   },
   {
     "title": "Movie Review Corpus and UI",
@@ -57,23 +58,6 @@
     ],
     "image": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=400&h=300&fit=crop",
     "category": "Data Science",
-    "impact": "Annotated 50,000+ reviews with 92% agreement"
-  },
-  {
-    "title": "Real-time Analytics Dashboard",
-    "desc": "Built a real-time analytics dashboard using Power BI and SQL pipelines for tracking order flow and business metrics. Implemented automated data processing workflows and created interactive visualizations that provide actionable insights for business decision-making. The dashboard serves 100+ daily users.",
-    "links": [
-      {
-        "label": "Case Study",
-        "href": "#"
-      },
-      {
-        "label": "Architecture",
-        "href": "#"
-      }
-    ],
-    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop",
-    "category": "Analytics",
-    "impact": "Improved decision speed by 60%"
+    "impact": "Prototyped a sentiment analysis research tool."
   }
 ]
