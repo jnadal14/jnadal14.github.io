@@ -1,4 +1,4 @@
-const CACHE_NAME = 'jacob-nadal-portfolio-v1.0.4';
+const CACHE_NAME = 'jacob-nadal-portfolio-v1.0.5';
 const urlsToCache = [
   '/',
   '/index.html',
@@ -29,12 +29,26 @@ self.addEventListener('install', event => {
 
 // Fetch event - serve from cache, fallback to network
 self.addEventListener('fetch', event => {
-  // Skip cache for HTML files to ensure fresh content
-  if (event.request.url.includes('index.html') || event.request.url.includes('projects.json')) {
+  const url = new URL(event.request.url);
+  const isLocalhost = url.hostname === 'localhost' || url.hostname === '127.0.0.1' || url.hostname === '::1';
+
+  // In local development, always bypass cache for fastest iteration
+  if (isLocalhost) {
+    event.respondWith(fetch(event.request, { cache: 'no-store' }));
+    return;
+  }
+
+  // In production, skip cache for frequently changing assets
+  if (
+    url.pathname.endsWith('index.html') ||
+    url.pathname.endsWith('projects.json') ||
+    url.pathname.endsWith('script.js') ||
+    url.pathname.endsWith('styles.css')
+  ) {
     event.respondWith(fetch(event.request));
     return;
   }
-  
+
   event.respondWith(
     caches.match(event.request)
       .then(response => {

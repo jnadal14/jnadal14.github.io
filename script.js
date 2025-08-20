@@ -279,7 +279,8 @@ function initStatsCounter() {
 // ===== PROJECTS LOADING =====
 async function loadProjects() {
   try {
-    const response = await fetch('projects.json');
+    // Bypass cache so local JSON edits show up immediately
+    const response = await fetch(`projects.json?v=${Date.now()}`, { cache: 'no-store' });
     const projects = await response.json();
     const projectsGrid = document.getElementById('projects-grid');
     
@@ -312,6 +313,10 @@ async function loadProjects() {
     projectCards.forEach((card, index) => {
       card.style.animationDelay = `${index * 0.1}s`;
     });
+
+    // Expose projects for client-side RAG (chatbot)
+    window.__projectsData = projects;
+    document.dispatchEvent(new CustomEvent('projectsLoaded', { detail: projects }));
 
   } catch (error) {
     console.error('Error loading projects:', error);
@@ -617,7 +622,7 @@ function preloadResources() {
 // Service Worker registration with aggressive update
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js?v=1.0.4')
+    navigator.serviceWorker.register('/sw.js?v=1.0.5')
       .then(registration => {
         // Attempt immediate update
         registration.update();

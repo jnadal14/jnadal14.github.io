@@ -31,8 +31,8 @@
   },
   
   {
-    "title": "Detoxification LLM Dataflow",
-    "desc": "Engineered a sophisticated data curation and toxicity reduction workflow for large language models. Designed filtering mechanisms for translation sentiment analysis and implemented detoxification stages with reproducible runs. The system ensures AI-generated content meets safety standards while maintaining quality and coherence.",
+    "title": "Agentic Moderation and Detoxification Pipeline",
+    "desc": "Built an agentic workflow that routes each input through language detection, translation when needed, sentiment and toxicity classification, and conditional detoxification. The agent uses LangDetect for language ID, UBC NLP Toucan for translation, and IBM Granite for classification and rewriting. It returns rationales, structured outputs, and handles errors across modular stages with reproducible runs.",
     "links": [
       {
         "label": "Repository",
@@ -44,8 +44,8 @@
       }
     ],
     "image": "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=300&fit=crop",
-    "category": "ML",
-    "impact": "Reduced toxic content.%"
+    "category": "NLP",
+    "impact": "Multilingual moderation agent. Sentiment accuracy 0.650. Detox quality 7.7 out of 10."
   },
   {
     "title": "Movie Review Corpus and UI",
